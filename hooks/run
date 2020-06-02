@@ -1,0 +1,10 @@
+#!/bin/bash
+
+exec 2>&1
+
+echo; echo "start the patch service in the background"
+
+echo "Sleeping ..."
+while true; do
+  sleep 10
+done
