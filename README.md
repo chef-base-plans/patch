@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.patch?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=69&branchName=master)
+[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.patch?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=120&branchName=master)
 
 # patch
 
@@ -35,6 +35,22 @@ To install this plan, you should run the following commands to first install, an
 will add the following binary to the PATH:
 
 * /bin/patch
+
+For example:
+
+```bash
+$ hab pkg install core/patch --binlink
+» Installing core/patch
+☁ Determining latest version of core/patch in the 'stable' channel
+☛ Verifying core/patch/2.7.6/20200306002655
+→ Using core/attr/2.4.48/20200305230504
+→ Using core/glibc/2.29/20200305172459
+→ Using core/linux-headers/4.19.62/20200305172241
+✓ Installed core/patch/2.7.6/20200306002655
+★ Install of core/patch/2.7.6/20200306002655 complete with 1 new packages installed.
+» Binlinking patch from core/patch/2.7.6/20200306002655 into /bin
+★ Binlinked patch from core/patch/2.7.6/20200306002655 to /bin/patch
+```
 
 #### Using an example binary
 
